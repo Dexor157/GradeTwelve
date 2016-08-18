@@ -21,11 +21,11 @@ public class visuals extends JFrame {
 		//add(pageLabel);
 		
 		JLabel nameLabel = new JLabel("fite me");
+		nameLabel.setSize(400,20);
+		nameLabel.setLocation(10, 10);
 		JLabel schoolLabel = new JLabel("you wont");
 		setLayout(null);
-		nameLabel.setSize(400,20);
 		schoolLabel.setSize(400,20);
-		nameLabel.setLocation(10, 10);
 		schoolLabel.setLocation(10, 60);
 		add(nameLabel);
 		add(schoolLabel);
@@ -39,7 +39,11 @@ public class visuals extends JFrame {
 		return a;
 	}
 	
-	
+	public static void changeArraylabel(JLabel[] name,int index, String text, int height, int width, int x, int y){
+		name[index].setSize(width,height);
+		name[index].setLocation(x, y);
+		name[index].setText(text);
+	}
 	
 	
 	

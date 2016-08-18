@@ -11,11 +11,13 @@ public class drawNumbers extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 		setResizable(false);
+		setLayout(null);
+		//creates the jframe stuff
 		JLabel nameLabel = new JLabel("fite me");
 		nameLabel.setSize(400,20);
 		nameLabel.setLocation(10, 10);
 		add(nameLabel);
-		setLayout(null);
+		
 		JLabel number[] = new JLabel[3];
 		number[0].setSize(20, 20);
 //		number[0].setLocation(95, 95);
@@ -56,6 +58,7 @@ public class drawNumbers extends JFrame{
 		PlaysWithArrays.fillarray(1, array);
 		PlaysWithArrays.print2darray(array);
 		drawNumbers drawn = new drawNumbers(); //this is an issue line
+		//creates the visual shit, you know
 	}
 
 }

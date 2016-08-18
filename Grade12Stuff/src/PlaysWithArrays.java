@@ -1,7 +1,7 @@
 
 public class PlaysWithArrays {
 
-		public static void print2darray(int[][] array){
+		public static void print2darray(int[][] array){//prints a 2 dimensional array in a square onto the console
 			
 			String[] linelist = new String[array[0].length];
 			for (int i = 0; i < linelist.length; i++){	
@@ -11,8 +11,8 @@ public class PlaysWithArrays {
 				}
 				System.out.println(linelist[i]);
 			}}
-		public static void fillarray(int val, int[][] array){
-			for (int y= 0; y<array[0].length; y++){
+		public static void fillarray(int val, int[][] array){//fills a 2 dimensional array with sequential values, val is the difference
+			for (int y= 0; y<array[0].length; y++){			//between any two values, or the amount added to get the next value
 				//fills the array with consecutive values
 				
 				for(int x = 0; x < array.length; x++){
